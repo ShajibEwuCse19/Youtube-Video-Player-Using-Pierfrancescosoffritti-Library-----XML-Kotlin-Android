@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/full_screen_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <!-- Custom Play Button -->
+    <Button
+        android:id="@+id/btn_custom_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"/>
+
+    <!-- Custom Pause Button -->
+    <Button
+        android:id="@+id/btn_custom_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btn_custom_play"
+        android:layout_margin="16dp"/>
+
+    <!-- Custom Fullscreen Button -->
+    <Button
+        android:id="@+id/btn_custom_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fullscreen"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btn_custom_pause"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
